@@ -82,7 +82,7 @@ export default function Contact() {
               marginBottom: "48px",
             }}
           >
-            Let's work
+            Let&apos;s work
             <br />
             <span
               style={{
@@ -105,9 +105,9 @@ export default function Contact() {
               marginBottom: "52px",
             }}
           >
-            I'm currently open to frontend developer roles in Melbourne. If
-            you're building something great and need someone who cares about the
-            details, let's talk.
+            I&apos;m currently open to frontend developer roles in Melbourne. If
+            you&apos;re building something great and need someone who cares about the
+            details, let&apos;s talk.
           </motion.p>
 
           {/* Primary CTA */}

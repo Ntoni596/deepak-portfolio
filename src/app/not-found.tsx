@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div
@@ -31,12 +33,12 @@ export default function NotFound() {
       >
         PAGE NOT FOUND
       </p>
-      <a
+      <Link
         href='/'
         style={{ marginTop: "32px", color: "var(--accent)", fontSize: "13px" }}
       >
         ← back home
-      </a>
+      </Link>
     </div>
   );
 }

@@ -7,7 +7,6 @@ import {
   useSpring,
   AnimatePresence,
 } from "framer-motion";
-import Link from "next/link";
 
 const NAV_LINKS = [
   { label: "projects", href: "#projects" },

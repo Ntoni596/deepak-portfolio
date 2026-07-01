@@ -78,12 +78,12 @@ export default function About() {
           <motion.div variants={STAGGER}>
             {[
               <>
-                I'm a Melbourne-based frontend developer with a background
+                I&apos;m a Melbourne-based frontend developer with a background
                 spanning{" "}
                 <strong style={{ color: "var(--text)", fontWeight: 500 }}>
                   production UI development, UX design, and digital marketing
                 </strong>
-                . I care about the details that most people don't notice but
+                . I care about the details that most people don&apos;t notice but
                 everyone feels — spacing, transitions, the moment a form
                 validates correctly.
               </>,

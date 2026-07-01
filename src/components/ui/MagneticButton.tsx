@@ -48,12 +48,11 @@ export default function MagneticButton({
     borderRadius: "3px",
     cursor: "pointer",
     border: "none",
-    background: "transparent",
     transition: "background 0.2s, color 0.2s, border-color 0.2s",
     textDecoration: "none",
     ...(variant === "primary"
       ? { background: "var(--accent)", color: "#fff" }
-      : { border: "1px solid var(--border)", color: "var(--muted)" }),
+      : { background: "transparent", border: "1px solid var(--border)", color: "var(--muted)" }),
     ...style,
   };
 
@@ -65,7 +64,7 @@ export default function MagneticButton({
         href={href}
         target={target}
         rel={rel}
-        ref={ref as any}
+        ref={ref as React.Ref<HTMLAnchorElement>}
         style={{ x, y, ...baseStyle }}
         className={className}
         onMouseMove={onMouseMove}
@@ -79,7 +78,7 @@ export default function MagneticButton({
 
   return (
     <motion.button
-      ref={ref as any}
+      ref={ref as React.Ref<HTMLButtonElement>}
       style={{ x, y, ...baseStyle }}
       className={className}
       onMouseMove={onMouseMove}

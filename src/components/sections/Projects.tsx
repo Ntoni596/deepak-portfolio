@@ -55,7 +55,7 @@ export default function Projects() {
             marginBottom: "60px",
           }}
         >
-          Things I've built.
+          Things I&apos;ve built.
         </motion.h2>
 
         <motion.div
