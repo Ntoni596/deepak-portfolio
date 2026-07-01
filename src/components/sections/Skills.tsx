@@ -129,7 +129,7 @@ export default function Skills() {
           variants={STAGGER}
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(280px, 100%), 1fr))",
             gap: "2px",
           }}
         >
@@ -140,7 +140,7 @@ export default function Skills() {
               style={{
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
-                padding: "32px",
+                padding: "clamp(20px, 5vw, 32px)",
                 transition: "border-color 0.3s",
               }}
               onMouseEnter={(e) => {

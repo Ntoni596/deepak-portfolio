@@ -69,7 +69,7 @@ export default function About() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))",
             gap: "60px",
             alignItems: "start",
           }}
@@ -167,7 +167,7 @@ export default function About() {
                 style={{
                   background: "var(--surface)",
                   border: "1px solid var(--border)",
-                  padding: "28px",
+                  padding: "clamp(18px, 5vw, 28px)",
                   position: "relative",
                   overflow: "hidden",
                   transition: "border-color 0.3s",

@@ -49,7 +49,8 @@ export default function GalleryModal({ images, title, onClose }: GalleryModalPro
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          padding: "40px",
+          padding: "clamp(16px, 6vw, 40px)",
+          overflowY: "auto",
         }}
       >
         <button
@@ -89,8 +90,8 @@ export default function GalleryModal({ images, title, onClose }: GalleryModalPro
           onClick={(e) => e.stopPropagation()}
           style={{
             position: "relative",
-            width: "min(1000px, 90vw)",
-            height: "min(640px, 65vh)",
+            width: "min(1000px, calc(100vw - 48px))",
+            height: "min(640px, 55vh)",
           }}
         >
           <Image

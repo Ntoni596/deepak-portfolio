@@ -62,7 +62,7 @@ export default function Projects() {
           variants={STAGGER}
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(340px, 100%), 1fr))",
             gap: "2px",
           }}
         >

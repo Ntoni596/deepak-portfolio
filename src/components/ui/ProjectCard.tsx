@@ -23,6 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const [galleryOpen, setGalleryOpen] = useState(false);
 
   const hasGallery = !!project.gallery?.length;
+  const cardPadding = "clamp(24px, 6vw, 40px)";
 
   return (
     <motion.div
@@ -33,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         boxSizing: "border-box",
         background: "var(--surface)",
         border: `1px solid ${hovered ? "rgba(79,142,247,0.35)" : "var(--border)"}`,
-        padding: "40px",
+        padding: cardPadding,
         position: "relative",
         overflow: "hidden",
         transition: "border-color 0.3s",
@@ -75,8 +76,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div
           style={{
             position: "relative",
-            margin: "-40px -40px 24px",
-            width: "calc(100% + 80px)",
+            margin: `calc(${cardPadding} * -1) calc(${cardPadding} * -1) 24px`,
+            width: `calc(100% + ${cardPadding} * 2)`,
             height: project.featured ? 320 : 200,
           }}
         >
